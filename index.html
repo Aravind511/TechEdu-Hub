@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechEdu Hub - BTech Learning & Placement Guide</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+      <h1>TechEdu Hub</h1>
+        <nav>
+            <ul class="container">
+                <li><a href="#home"><b>Home</b></a></li>
+                <li><a href="#notes"><b>Notes</b></a></li>
+                <li><a href="#lectures"><b>Lectures</b></a></li>
+                <li><a href="#skills"><b>Skills</b></a></li>
+                <li><a href="#placement"><b>Placement Guide</b></a></li>
+                <li><a href="#contact"><b>Contact</b></a></li>
+            </ul>
+        </nav>
+        <input type="text" id="search" placeholder="Search notes..." onkeyup="searchNotes()">
+    </header>
+        
+    <section id="home">
+        <div class="image-container">
+            <img src="./TechEdu.jpg" alt="Education">
+            <div class="content">
+                <h2>Empowering BTech Minds - Welcome to TechEdu Hub!</h2>
+                <p>
+                    <h7><strong>"Your Ultimate Companion for BTech Success - Learn, Grow, and Get Placed!"</strong></h7>  
+
+                    <p><strong>📚 Master Your Subjects - Access structured notes, expert lectures, and essential study resources.</strong></p>  
+                    <p><strong>💡 Enhance Your Skills - Stay ahead with industry-relevant skills and hands-on projects.</strong></p>  
+                    <p><strong>🎯 Ace Your Placements - Get exclusive tips, guides, and resources to land your dream job.</strong></p>  
+                    <br>
+                    <h7><strong>TechEdu Hub is more than just a platform - it's your gateway to a brighter future! 🚀</strong></h7>
+                </p>
+            </div>
+        </div>
+    </section>  
+
+    <section id="notes">
+        <h2>Notes</h2>
+        
+        <!-- Year Selection -->
+        <div class="year-buttons">
+            <button onclick="showSubjects(1)">1st Year</button>
+            <button onclick="showSubjects(2)">2nd Year</button>
+            <button onclick="showSubjects(3)">3rd Year</button>
+            <button onclick="showSubjects(4)">4th Year</button>
+        </div>
+    
+        <!-- Subjects List -->
+        <ul id="notes-list">
+            <!-- Subjects will be displayed here dynamically -->
+        </ul>
+    </section>
+        
+    <section id="lectures">
+        <h2>Lectures</h2>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/fHKPQEVCX-s" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/ajdRvxDWH4w" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/4yEIZ9KZ_aQ" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>    
+        
+    <section id="skills">
+        <h2>Skills Progress Tracker</h2>
+        <div class="progress-container">
+            <label for="html-skill">HTML</label>
+            <div class="progress-bar"><div class="progress-fill" id="html-skill" style="width: 90%">90%</div></div>
+                
+            <label for="css-skill">CSS</label>
+            <div class="progress-bar"><div class="progress-fill" id="css-skill" style="width: 70%">70%</div></div>
+                
+            <label for="js-skill">JavaScript</label>
+            <div class="progress-bar"><div class="progress-fill" id="js-skill" style="width: 40%">40%</div></div>
+        </div>
+    </section>
+        
+    <section id="placement">
+        <h2>Placement Guide</h2>
+        <p>Prepare for your placements with the best resources:</p>
+        <ul>
+            <li><a href="https://www.geeksforgeeks.org/">GeeksforGeeks - Interview Preparation</a></li>
+            <li><a href="https://www.leetcode.com/">LeetCode - Coding Practice</a></li>
+            <li><a href="https://www.hackerrank.com/">HackerRank - Coding Challenges</a></li>
+            <li><a href="https://www.linkedin.com/learning/">LinkedIn Learning - Soft Skills & Technical Courses</a></li>
+        </ul>
+    </section>
+        
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    
+    <script src="./main.js"></script>
+</body>
+</html>
